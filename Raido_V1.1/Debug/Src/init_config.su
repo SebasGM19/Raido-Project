@@ -1,0 +1,8 @@
+../Src/init_config.c:10:17:GPIO_DigitalRead	24	static
+../Src/init_config.c:20:17:GPIO_DigitalWrite	24	static
+../Src/init_config.c:35:15:ClockEnable	24	static
+../Src/init_config.c:94:15:SetPinMode	24	static
+../Src/init_config.c:136:15:GPIO_SET_Output_Byte	24	static
+../Src/init_config.c:158:15:GPIO_Write_Byte	24	static
+../Src/init_config.c:178:15:GpioPullUpDownState	24	static
+../Src/init_config.c:191:15:Delay	48	static

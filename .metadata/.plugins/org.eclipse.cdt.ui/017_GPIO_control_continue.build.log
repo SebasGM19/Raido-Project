@@ -1,0 +1,10 @@
+16:12:30 **** Incremental Build of configuration Debug for project 017_GPIO_control_continue ****
+make -j8 all 
+arm-none-eabi-size  017_GPIO_control_continue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	017_GPIO_control_continue.elf
+Finished building: default.size.stdout
+ 
+
+16:12:31 Build Finished. 0 errors, 0 warnings. (took 308ms)
+

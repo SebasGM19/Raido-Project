@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;017_GPIO_control_continue/017_GPIO_control_continue Debug(1).launch&apos; to &apos;017_GPIO_control_continue Debug.launch&apos;" description="Rename resource &apos;017_GPIO_control_continue Debug(1).launch&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="017_GPIO_control_continue Debug(1).launch" name="017_GPIO_control_continue Debug.launch" stamp="1709503890392" updateReferences="true"/>
+</session>

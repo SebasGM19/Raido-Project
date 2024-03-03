@@ -1,0 +1,10 @@
+16:23:23 **** Incremental Build of configuration Debug for project Raido_V1.1 ****
+make -j8 all 
+arm-none-eabi-size  Raido_V1.1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	Raido_V1.1.elf
+Finished building: default.size.stdout
+ 
+
+16:23:24 Build Finished. 0 errors, 0 warnings. (took 292ms)
+

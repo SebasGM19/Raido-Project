@@ -1,0 +1,85 @@
+16:09:13 **** Build of configuration Debug for project 017_GPIO_control_continue ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/init_config.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/init_config.d" -MT"Src/init_config.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/init_config.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:39:16: warning: unused variable 'start_4bit' [-Wunused-variable]
+   39 |         int8_t start_4bit=7;
+      |                ^~~~~~~~~~
+../Src/main.c:36:17: warning: unused variable 'sec_4bit_linea' [-Wunused-variable]
+   36 |         uint8_t sec_4bit_linea[8]={9,8,12,4,6,2,3,1};
+      |                 ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "017_GPIO_control_continue.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\S4IOT\Desktop\STMCube_Courses\Bare-Metal\My project\017_GPIO_control_continue\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="017_GPIO_control_continue.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 017_GPIO_control_continue.elf
+ 
+arm-none-eabi-size  017_GPIO_control_continue.elf 
+arm-none-eabi-objdump -h -S 017_GPIO_control_continue.elf  > "017_GPIO_control_continue.list"
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	017_GPIO_control_continue.elf
+Finished building: default.size.stdout
+ 
+Finished building: 017_GPIO_control_continue.list
+ 
+16:09:58 **** Incremental Build of configuration Debug for project 017_GPIO_control_continue ****
+make -j8 all 
+arm-none-eabi-size  017_GPIO_control_continue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	017_GPIO_control_continue.elf
+Finished building: default.size.stdout
+ 
+16:10:25 **** Incremental Build of configuration Debug for project 017_GPIO_control_continue ****
+make -j8 all 
+arm-none-eabi-size  017_GPIO_control_continue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	017_GPIO_control_continue.elf
+Finished building: default.size.stdout
+ 
+16:12:30 **** Incremental Build of configuration Debug for project 017_GPIO_control_continue ****
+make -j8 all 
+arm-none-eabi-size  017_GPIO_control_continue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	017_GPIO_control_continue.elf
+Finished building: default.size.stdout
+ 
+16:22:40 **** Build of configuration Debug for project Raido_V1.1 ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f411retx.d" -MT"Startup/startup_stm32f411retx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f411retx.o" "../Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Src/init_config.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/init_config.d" -MT"Src/init_config.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/init_config.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c: In function 'main':
+../Src/main.c:39:16: warning: unused variable 'start_4bit' [-Wunused-variable]
+   39 |         int8_t start_4bit=7;
+      |                ^~~~~~~~~~
+../Src/main.c:36:17: warning: unused variable 'sec_4bit_linea' [-Wunused-variable]
+   36 |         uint8_t sec_4bit_linea[8]={9,8,12,4,6,2,3,1};
+      |                 ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Raido_V1.1.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\S4IOT\Desktop\STMCube_Courses\Bare-Metal\My project\Raido_V1.1\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Raido_V1.1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Raido_V1.1.elf
+ 
+arm-none-eabi-size  Raido_V1.1.elf 
+arm-none-eabi-objdump -h -S Raido_V1.1.elf  > "Raido_V1.1.list"
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	Raido_V1.1.elf
+Finished building: default.size.stdout
+ 
+Finished building: Raido_V1.1.list
+ 
+16:23:11 **** Incremental Build of configuration Debug for project Raido_V1.1 ****
+make -j8 all 
+arm-none-eabi-size  Raido_V1.1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	Raido_V1.1.elf
+Finished building: default.size.stdout
+ 
+16:23:23 **** Incremental Build of configuration Debug for project Raido_V1.1 ****
+make -j8 all 
+arm-none-eabi-size  Raido_V1.1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16368	    464	   1904	  18736	   4930	Raido_V1.1.elf
+Finished building: default.size.stdout
+ 
