@@ -2,10 +2,10 @@
  * init_config.c
  *
  *  Created on: Feb 4, 2024
- *      Author: S4IOT
+ *      Author: Sebastian G.M.
  */
 
-#include "init_config.h"
+#include "Basic_settings.h"
 
 State_Control_t GPIO_DigitalRead(Set_Port_t Port_define, Pin_number_t Pin_defined){
 

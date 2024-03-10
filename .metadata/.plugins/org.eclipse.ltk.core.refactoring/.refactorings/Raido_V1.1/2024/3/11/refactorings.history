@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Raido_V1.1/Src/init_config.c&apos; to &apos;Basic_settings.c&apos;" description="Rename resource &apos;init_config.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/init_config.c" name="Basic_settings.c" stamp="1710113393682" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Raido_V1.1/Src/init_config.h&apos; to &apos;Basic_settings.h&apos;" description="Rename resource &apos;init_config.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/init_config.h" name="Basic_settings.h" stamp="1710113408102" updateReferences="true"/>
+</session>

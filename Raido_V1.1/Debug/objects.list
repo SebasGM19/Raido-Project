@@ -1,4 +1,4 @@
-"./Src/init_config.o"
+"./Src/Basic_settings.o"
 "./Src/main.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"
