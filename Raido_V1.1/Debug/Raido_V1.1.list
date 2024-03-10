@@ -39,13 +39,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_macro  00002a0e  00000000  00000000  00021c0f  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   000019a2  00000000  00000000  0002461d  2**0
+ 18 .debug_line   000019ab  00000000  00000000  0002461d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    00009f90  00000000  00000000  00025fbf  2**0
+ 19 .debug_str    00009f96  00000000  00000000  00025fc8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_frame  000014a8  00000000  00000000  0002ff50  2**2
+ 20 .debug_frame  000014a8  00000000  00000000  0002ff60  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000071  00000000  00000000  000313f8  2**0
+ 21 .debug_line_str 00000071  00000000  00000000  00031408  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -935,10 +935,10 @@ Disassembly of section .text:
  8000bb6:	bf00      	nop
 
 08000bb8 <GPIO_DigitalRead>:
- *      Author: S4IOT
+ *      Author: Sebastian G.M.
  */
 
-#include "init_config.h"
+#include "Basic_settings.h"
 
 State_Control_t GPIO_DigitalRead(Set_Port_t Port_define, Pin_number_t Pin_defined){
  8000bb8:	b480      	push	{r7}

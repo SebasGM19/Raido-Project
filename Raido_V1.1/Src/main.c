@@ -16,7 +16,7 @@
  ******************************************************************************
  */
 
-#include "init_config.h"
+#include "Basic_settings.h"
 
 //para debug VER CLASES DE 55 A 56 DEL CURSO
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)

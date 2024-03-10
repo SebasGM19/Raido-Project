@@ -133,18 +133,18 @@ Discarded input sections
  .debug_str     0x0000000000000000       0xdf C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1c C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .group         0x0000000000000000        0xc ./Src/init_config.o
- .text          0x0000000000000000        0x0 ./Src/init_config.o
- .data          0x0000000000000000        0x0 ./Src/init_config.o
- .bss           0x0000000000000000        0x0 ./Src/init_config.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .group         0x0000000000000000        0xc ./Src/Basic_settings.o
+ .text          0x0000000000000000        0x0 ./Src/Basic_settings.o
+ .data          0x0000000000000000        0x0 ./Src/Basic_settings.o
+ .bss           0x0000000000000000        0x0 ./Src/Basic_settings.o
  .text.GpioPullUpDownState
-                0x0000000000000000       0x54 ./Src/init_config.o
+                0x0000000000000000       0x54 ./Src/Basic_settings.o
  .group         0x0000000000000000        0xc ./Src/main.o
  .group         0x0000000000000000        0xc ./Src/main.o
  .group         0x0000000000000000        0xc ./Src/main.o
@@ -580,7 +580,7 @@ Linker script and memory map
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m/nofp/crti.o
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m/nofp/crtbegin.o
 LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
-LOAD ./Src/init_config.o
+LOAD ./Src/Basic_settings.o
 LOAD ./Src/main.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
@@ -669,25 +669,25 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x0000000008000b68                __fixdfsi
  *(.text*)
  .text.GPIO_DigitalRead
-                0x0000000008000bb8       0x3e ./Src/init_config.o
+                0x0000000008000bb8       0x3e ./Src/Basic_settings.o
                 0x0000000008000bb8                GPIO_DigitalRead
  .text.GPIO_DigitalWrite
-                0x0000000008000bf6       0x50 ./Src/init_config.o
+                0x0000000008000bf6       0x50 ./Src/Basic_settings.o
                 0x0000000008000bf6                GPIO_DigitalWrite
  *fill*         0x0000000008000c46        0x2 
  .text.ClockEnable
-                0x0000000008000c48      0x144 ./Src/init_config.o
+                0x0000000008000c48      0x144 ./Src/Basic_settings.o
                 0x0000000008000c48                ClockEnable
  .text.SetPinMode
-                0x0000000008000d8c      0x128 ./Src/init_config.o
+                0x0000000008000d8c      0x128 ./Src/Basic_settings.o
                 0x0000000008000d8c                SetPinMode
  .text.GPIO_SET_Output_Byte
-                0x0000000008000eb4       0x5c ./Src/init_config.o
+                0x0000000008000eb4       0x5c ./Src/Basic_settings.o
                 0x0000000008000eb4                GPIO_SET_Output_Byte
  .text.GPIO_Write_Byte
-                0x0000000008000f10       0x54 ./Src/init_config.o
+                0x0000000008000f10       0x54 ./Src/Basic_settings.o
                 0x0000000008000f10                GPIO_Write_Byte
- .text.Delay    0x0000000008000f64       0x8c ./Src/init_config.o
+ .text.Delay    0x0000000008000f64       0x8c ./Src/Basic_settings.o
                 0x0000000008000f64                Delay
  .text.main     0x0000000008000ff0      0x130 ./Src/main.o
                 0x0000000008000ff0                main
@@ -1167,7 +1167,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .ARM.attributes
                 0x000000000000001e       0x2e C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004c       0x2e ./Src/init_config.o
+                0x000000000000004c       0x2e ./Src/Basic_settings.o
  .ARM.attributes
                 0x000000000000007a       0x2e ./Src/main.o
  .ARM.attributes
@@ -1283,20 +1283,20 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 .comment        0x0000000000000000       0x43
  .comment       0x0000000000000000       0x43 C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/thumb/v7e-m/nofp/crtbegin.o
                                          0x44 (size before relaxing)
- .comment       0x0000000000000043       0x44 ./Src/init_config.o
+ .comment       0x0000000000000043       0x44 ./Src/Basic_settings.o
  .comment       0x0000000000000043       0x44 ./Src/main.o
  .comment       0x0000000000000043       0x44 ./Src/syscalls.o
  .comment       0x0000000000000043       0x44 ./Src/sysmem.o
 
 .debug_info     0x0000000000000000     0x1333
- .debug_info    0x0000000000000000      0x797 ./Src/init_config.o
+ .debug_info    0x0000000000000000      0x797 ./Src/Basic_settings.o
  .debug_info    0x0000000000000797      0x340 ./Src/main.o
  .debug_info    0x0000000000000ad7      0x6d1 ./Src/syscalls.o
  .debug_info    0x00000000000011a8      0x168 ./Src/sysmem.o
  .debug_info    0x0000000000001310       0x23 ./Startup/startup_stm32f411retx.o
 
 .debug_abbrev   0x0000000000000000      0x437
- .debug_abbrev  0x0000000000000000       0xe5 ./Src/init_config.o
+ .debug_abbrev  0x0000000000000000       0xe5 ./Src/Basic_settings.o
  .debug_abbrev  0x00000000000000e5       0xd3 ./Src/main.o
  .debug_abbrev  0x00000000000001b8      0x1b1 ./Src/syscalls.o
  .debug_abbrev  0x0000000000000369       0xbc ./Src/sysmem.o
@@ -1304,7 +1304,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 
 .debug_aranges  0x0000000000000000      0x170
  .debug_aranges
-                0x0000000000000000       0x58 ./Src/init_config.o
+                0x0000000000000000       0x58 ./Src/Basic_settings.o
  .debug_aranges
                 0x0000000000000058       0x20 ./Src/main.o
  .debug_aranges
@@ -1317,7 +1317,7 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
 .debug_rnglists
                 0x0000000000000000       0xff
  .debug_rnglists
-                0x0000000000000000       0x40 ./Src/init_config.o
+                0x0000000000000000       0x40 ./Src/Basic_settings.o
  .debug_rnglists
                 0x0000000000000040       0x14 ./Src/main.o
  .debug_rnglists
@@ -1328,14 +1328,14 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000000000000e6       0x19 ./Startup/startup_stm32f411retx.o
 
 .debug_macro    0x0000000000000000     0x2a0e
- .debug_macro   0x0000000000000000       0x6d ./Src/init_config.o
- .debug_macro   0x000000000000006d      0xaa8 ./Src/init_config.o
- .debug_macro   0x0000000000000b15       0x22 ./Src/init_config.o
- .debug_macro   0x0000000000000b37       0x8e ./Src/init_config.o
- .debug_macro   0x0000000000000bc5       0x51 ./Src/init_config.o
- .debug_macro   0x0000000000000c16      0x103 ./Src/init_config.o
- .debug_macro   0x0000000000000d19       0x6a ./Src/init_config.o
- .debug_macro   0x0000000000000d83      0x1df ./Src/init_config.o
+ .debug_macro   0x0000000000000000       0x6d ./Src/Basic_settings.o
+ .debug_macro   0x000000000000006d      0xaa8 ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000b15       0x22 ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000b37       0x8e ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000bc5       0x51 ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000c16      0x103 ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000d19       0x6a ./Src/Basic_settings.o
+ .debug_macro   0x0000000000000d83      0x1df ./Src/Basic_settings.o
  .debug_macro   0x0000000000000f62       0x79 ./Src/main.o
  .debug_macro   0x0000000000000fdb      0x286 ./Src/syscalls.o
  .debug_macro   0x0000000000001261       0x5b ./Src/syscalls.o
@@ -1385,27 +1385,27 @@ LOAD C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00000000000026d3       0xff ./Src/sysmem.o
  .debug_macro   0x00000000000027d2      0x23c ./Src/sysmem.o
 
-.debug_line     0x0000000000000000     0x19a2
- .debug_line    0x0000000000000000      0x656 ./Src/init_config.o
- .debug_line    0x0000000000000656      0x471 ./Src/main.o
- .debug_line    0x0000000000000ac7      0x8e2 ./Src/syscalls.o
- .debug_line    0x00000000000013a9      0x57e ./Src/sysmem.o
- .debug_line    0x0000000000001927       0x7b ./Startup/startup_stm32f411retx.o
+.debug_line     0x0000000000000000     0x19ab
+ .debug_line    0x0000000000000000      0x65c ./Src/Basic_settings.o
+ .debug_line    0x000000000000065c      0x474 ./Src/main.o
+ .debug_line    0x0000000000000ad0      0x8e2 ./Src/syscalls.o
+ .debug_line    0x00000000000013b2      0x57e ./Src/sysmem.o
+ .debug_line    0x0000000000001930       0x7b ./Startup/startup_stm32f411retx.o
 
-.debug_str      0x0000000000000000     0x9f90
- .debug_str     0x0000000000000000     0x4336 ./Src/init_config.o
-                                       0x44d6 (size before relaxing)
- .debug_str     0x0000000000004336       0x7c ./Src/main.o
-                                       0x3f37 (size before relaxing)
- .debug_str     0x00000000000043b2     0x5b49 ./Src/syscalls.o
+.debug_str      0x0000000000000000     0x9f96
+ .debug_str     0x0000000000000000     0x433c ./Src/Basic_settings.o
+                                       0x44dc (size before relaxing)
+ .debug_str     0x000000000000433c       0x7c ./Src/main.o
+                                       0x3f3a (size before relaxing)
+ .debug_str     0x00000000000043b8     0x5b49 ./Src/syscalls.o
                                        0x9923 (size before relaxing)
- .debug_str     0x0000000000009efb       0x66 ./Src/sysmem.o
+ .debug_str     0x0000000000009f01       0x66 ./Src/sysmem.o
                                        0x602c (size before relaxing)
- .debug_str     0x0000000000009f61       0x2f ./Startup/startup_stm32f411retx.o
+ .debug_str     0x0000000000009f67       0x2f ./Startup/startup_stm32f411retx.o
                                          0x7d (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x14a8
- .debug_frame   0x0000000000000000      0x154 ./Src/init_config.o
+ .debug_frame   0x0000000000000000      0x154 ./Src/Basic_settings.o
  .debug_frame   0x0000000000000154       0x30 ./Src/main.o
  .debug_frame   0x0000000000000184      0x2d4 ./Src/syscalls.o
  .debug_frame   0x0000000000000458       0x34 ./Src/sysmem.o
